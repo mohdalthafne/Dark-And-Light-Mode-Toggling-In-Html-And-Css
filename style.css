@@ -1,0 +1,103 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Variables */
+:root{
+    --body-color: #e4e9f7;
+    --text-color: #333;
+    --bg-color: #fff;
+    --primary-color: #695cfe;
+}
+body.dark{
+    --body-color: #010718;
+    --text-color: #ccc;
+    --bg-color: #18191a;
+    --primary-color: #4070f4;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--body-color);
+    transition: all .5s ease;
+}
+.wrapper{
+    width: 310px;
+    padding: 30px;
+    background: var(--bg-color);
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+.wrapper img{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    margin-left: 40px;
+}
+.wrapper .icon{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.wrapper h3{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.wrapper p{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-color);
+}
+.wrapper .btns{
+    margin-top: 15px;
+    text-align: center;
+}
+.wrapper .btns .btn{
+    background: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    padding: 8px 12px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-color);
+    border-radius: 8px;
+    transition: all .5s ease;
+}
+.wrapper .btns .btn:hover{
+    background: var(--primary-color);
+    color: #fff;
+}
+.wrapper .social-links{
+    margin-top: 25px;
+    text-align: center;
+}
+.wrapper .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: var(--bg-color);
+    line-height: 40px;
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+    font-size: 20px;
+}
